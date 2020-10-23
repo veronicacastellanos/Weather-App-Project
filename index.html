@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Time Weather</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/e0293bd7c6.js"
+      ;
+      crossorigin="anonymous"
+      ;
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <h1>Weather App</h1>
+        <form action="text" id="search-form">
+          <input
+            type="search"
+            placeholder="Type a city.."
+            autofocus="on"
+            autocomplete="off"
+            id="city-input"
+          />
+          <input type="submit" value="Search" />
+        </form>
+        <h2 id="city"></h2>
+        <p class="current-temperature" id="temp-now"></p>
+        <p class="current-date" id="date">Wednesday, 15 September</p>
+        <ul>
+          <div class="row">
+            <div class="col-3">
+              <li class="stats">
+                High
+                <br />
+                29°C
+              </li>
+            </div>
+            <li class="stats">
+              <div class="col-3">
+                Low
+                <br />
+                16°C
+              </div>
+            </li>
+            <div class="col-3">
+              <li class="stats">
+                Rain
+                <br />
+                10%
+              </li>
+            </div>
+            <div class="col-3">
+              <li class="stats">
+                Wind
+                <br />
+                30KM/H
+              </li>
+            </div>
+          </div>
+        </ul>
+        <h3>Forecast</h3>
+        <ul>
+          <div class="row">
+            <div class="col-2">
+              <li class="forecast">
+                Thursday
+                <br />
+                <br />
+                <i class="fas fa-cloud"></i>
+              </li>
+            </div>
+            <div class="col-2">
+              <li class="forecast">
+                Friday
+                <br />
+                <br />
+                <i class="fas fa-cloud"></i>
+              </li>
+            </div>
+            <div class="col-2">
+              <li class="forecast">
+                Saturday
+                <br />
+                <br />
+                <i class="fas fa-cloud-rain"></i>
+              </li>
+            </div>
+            <div class="col-2">
+              <li class="forecast">
+                Sunday
+                <br />
+                <br />
+                <i class="fas fa-cloud-sun"></i>
+              </li>
+            </div>
+            <div class="col-2">
+              <li class="forecast">
+                Monday
+                <br />
+                <br />
+                <i class="fas fa-cloud-sun"></i>
+              </li>
+            </div>
+            <div class="col-2">
+              <li class="forecast">
+                Tuesday
+                <br />
+                <br />
+                <i class="fas fa-cloud-sun"></i>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>

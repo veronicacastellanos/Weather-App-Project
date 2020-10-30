@@ -36,6 +36,11 @@ function displayWeatherCondition(response) {
   document.querySelector("#low-temp").innerHTML = `${lowTemp}°C`;
   document.querySelector("#humidity").innerHTML = `${humidity}%`;
   document.querySelector("#wind-speed").innerHTML = `${windSpeed} KM/H`;
+  let iconElement = document.querySelector("#icon");
+    iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function searchCity(event) {

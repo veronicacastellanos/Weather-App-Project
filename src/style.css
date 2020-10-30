@@ -7,6 +7,7 @@ form {
   text-align: center;
   padding: 15px;
 }
+
 h2 {
   font-size: 30px;
   color: #e97171;
@@ -35,11 +36,30 @@ li i {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+.search-form {
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #8675a9;
+  border-color: #8675a9;
+  border-style: solid;
+}
+
+.search-button {
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
+  color: #e97171;
+  border-color: #8675a9;
+  border-style: solid;
+}
+
 .current-temperature {
   font-size: 30px;
   color: #8675a9;
   text-align: center;
+  margin-right: 85px;
 }
+
 .current-date {
   font-size: 15px;
   color: #8675a9;

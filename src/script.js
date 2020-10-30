@@ -27,7 +27,15 @@ dateElement.innerHTML = formatDate(currentDate);
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   let currentTemp = Math.round(response.data.main.temp);
+  let highTemp = Math.round(response.data.main.temp_max);
+  let lowTemp= Math.round(response.data.main.temp_min);
+  let humidity = Math.round(response.data.main.humidity);
+  let windSpeed = Math.round(response.data.wind.speed);
   document.querySelector("#temp-now").innerHTML = `${currentTemp}°C`;
+  document.querySelector("#high-temp").innerHTML = `${highTemp}°C`;
+  document.querySelector("#low-temp").innerHTML = `${lowTemp}°C`;
+  document.querySelector("#humidity").innerHTML = `${humidity}%`;
+  document.querySelector("#wind-speed").innerHTML = `${windSpeed} KM/H`;
 }
 
 function searchCity(event) {

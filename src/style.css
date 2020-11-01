@@ -67,7 +67,7 @@ li i {
 }
 
 .units {
-  font-size: 15px;
+  font-size: 20px;
   color: #8675a9;
 }
 
@@ -93,4 +93,13 @@ li i {
   font-weight: 400px;
   list-style-type: none;
   margin: 0 auto;
+}
+
+.current-temperature .active {
+  color: #8675a9;
+  cursor: default;
+}
+
+.current-temperature .active:hover {
+  text-decoration: none;
 }

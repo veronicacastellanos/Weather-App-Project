@@ -12,6 +12,7 @@ p {
   font-size: 15px;
   color: #8675a9;
   text-align: center;
+  margin-top: 20px;
 }
 
 h2 {
@@ -74,15 +75,15 @@ li i {
 .current-date {
   font-size: 15px;
   color: #8675a9;
-  margin-bottom: 30px;
-  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-top: 50px;
   text-align: center;
 }
 .stats {
   color: #8675a9;
   font-size: 15px;
   font-weight: 400px;
-  margin-top: 5px;
+  margin-top: 20px;
   text-align: center;
   padding: 20px 12px;
   list-style-type: none;

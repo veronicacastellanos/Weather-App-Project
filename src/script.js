@@ -46,9 +46,8 @@ function displayWeatherCondition(response) {
   celsiusLowTemp = response.data.main.temp_min;
 }
 
-function searchCity(event) {
+function search(city) {
   let apiKey = "28e5d779cb15e67167736268bc70d36f";
-  let city = document.querySelector("#city-input").value;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeatherCondition);
 }
@@ -56,7 +55,7 @@ function searchCity(event) {
 function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#city-input").value;
-  searchCity(city);
+  search(city);
 }
 
 function displayFahrenheitTemperature(event) {
@@ -96,3 +95,5 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+search("Madrid");

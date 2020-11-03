@@ -68,13 +68,12 @@ for (let index = 0; index <6; index++) {
   forecast = response.data.list[index];
   forecastElement.innerHTML += `
             <div class="col-2">
-              <li class="forecast">
+              <div class="forecast">
                 ${formatHours(forecast.dt * 1000)}
-                <br />
                 <br />
             <img
               src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"/>
-            </li>
+            </div>
             <div class="weather-forecast-temperature">
              <strong>
                  ${Math.round(forecast.main.temp_max)}°

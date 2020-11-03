@@ -29,7 +29,7 @@ h3 {
 
 .weather-app {
   font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
-  max-width: 600px;
+  max-width: 650px;
   background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
   padding: 15px;
   border-radius: 10px;
@@ -83,7 +83,7 @@ h3 {
   padding: 20px 12px;
   list-style-type: none;
 }
-.forecast {
+.weather-forecast {
   color: #8675a9;
   font-size: 15px;
   font-weight: 400px;
@@ -91,7 +91,7 @@ h3 {
   margin: 0 auto;
 }
 
-.forecast img {
+.weather-forecast img {
   display: block;
   margin: 0 auto;
   height: 48px;

@@ -21,18 +21,12 @@ h2 {
   padding: 5px 0;
   text-align: center;
 }
-h2 i {
-  font-size: 50px;
-}
 h3 {
   font-size: 20px;
   color: #e97171;
   margin-bottom: 35px;
 }
-li i {
-  font-size: 40px;
-  color: #ffffff;
-}
+
 .weather-app {
   font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
   max-width: 600px;
@@ -84,6 +78,7 @@ li i {
   font-size: 15px;
   font-weight: 400px;
   margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
   padding: 20px 12px;
   list-style-type: none;
@@ -96,6 +91,13 @@ li i {
   margin: 0 auto;
 }
 
+.forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
+}
+
 .current-temperature .active {
   color: #8675a9;
   cursor: default;
@@ -103,4 +105,15 @@ li i {
 
 .current-temperature .active:hover {
   text-decoration: none;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  color: #8675a9;
+  font-size: 15px;
+  font-weight: 400;
+  height: auto;
+  line-height: 15px;
+  white-space: nowrap;
+  margin-top: 15px;
 }
